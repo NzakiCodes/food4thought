@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  @apply py-5 px-10;
+}
+.navbar {
+  @apply bg-white py-5 px-10 flex items-baseline gap-x-12;
+}
+.conatiner {
+  @apply mx-auto;
+}
+.logo {
+  @apply mr-10;
+}
+.logo a {
+  @apply font-brand text-3xl text-gray-700 hover:text-primary;
+}
+.navlinks{
+  @apply flex gap-x-12 font-serif items-center text-base text-gray-800;
+}
+.navlinks a:not(.button){
+  @apply hover:text-primary transition-colors;
+}
+.button{
+  @apply bg-primary text-white font-serif py-2 px-4 self-center rounded-full;
+}
+.button--gradient{
+  @apply bg-gradient-to-t hover:bg-gradient-to-b  from-secondary to-primary transition-colors;
+}
+
